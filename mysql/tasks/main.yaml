@@ -1,0 +1,14 @@
+---
+- name: Install mysql
+  apt:
+    name: 
+      - mysql-server
+      - mysql-client 
+    state: present
+    update_cache: yes
+
+- name: start en enable mysql
+  service:
+    name: mysql
+    state: started
+    enabled: yes
