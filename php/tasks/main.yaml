@@ -1,5 +1,0 @@
----
-- name: Install PHP
-  apt:
-    name: php
-    state: present
