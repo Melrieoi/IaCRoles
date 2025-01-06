@@ -1,0 +1,11 @@
+---
+- name: Install php-mysql
+  apt:
+    name: php-mysql
+    state: present
+
+- name: start en enable php-mysql
+  service:
+    name: mysql
+    state: started
+    enabled: yes
